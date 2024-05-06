@@ -31,21 +31,22 @@ const Login = () => {
 			setMessage(data.message)
 			setToken(data.token)
 			setName(data.name)
-			console.log(data.name)
 			localStorage.setItem("token", data.token)
 			setIsAuth(true)
 			setIsLoading(false)
+			setTimeout(() => {
+				if (data.token !== undefined) {
+					console.log("Token is defined. Redirecting to home page...");
+					navigate("/")
+				}
+			}, 3000)
+
 		} catch (error) {
 			console.log(error);
 			setError(true)
 			setIsLoading(false)
 		}
-
-		setTimeout(() => {
-			navigate("/")
-		}, 3000)
 	}
-
 
 	return (
 		<div className="account-singup-form">
