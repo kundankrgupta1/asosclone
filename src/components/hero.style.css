@@ -1,0 +1,76 @@
+.hero {
+	width: 1400px;
+	margin: auto;
+	background: url(https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/asos_march_generic-hp_desktop.webp);
+	background-size: cover;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.hero-text {
+	color: white;
+	letter-spacing: 1px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-text > h1 {
+	font-family: var(--bold-font);
+	padding: 0 15px;
+	font-size: 60px;
+	background-color: black;
+	width: fit-content;
+}
+
+.hero-text > p  {
+	font-family: var(--regular-font);
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding: 0 10px;
+	background-color: black;
+	width: fit-content;
+}
+
+.hero-btn {
+	margin-top: 20px;
+}
+
+.hero-btn > button {
+	margin: 0 10px;
+	font-family: var(--bold-font);
+	padding: 12px 25px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	transition: 0.5s;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.hero-text-2 {
+	background-color: var(--11lcxa5);
+	padding: 5px 0;
+	width: 1360px;
+	color: white;
+	letter-spacing: 1px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 16px;
+	font-family: var(--bold-font);
+	position: absolute;
+	bottom: 0;
+}
+
+.hero-text-2 > p span {
+	font-family: var(--regular-font);
+}
