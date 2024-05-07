@@ -1,13 +1,16 @@
 .account {
+	background-color: var(--1wwppwc);
 	width: 100%;
-	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: var(--1wwppwc);
 	gap: 40px;
 }
+.account-header {
+	margin-top: 40px;
+}
+
 .account-container {
 	width: 600px;
 	background-color: #fff;
@@ -82,4 +85,8 @@
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+}
+
+.account-footer {
+	margin-bottom: 26px;
 }

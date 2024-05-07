@@ -19,13 +19,16 @@ const UserSection = () => {
 				{
 					token && isAuth ?
 						<ul>
-							<li><Link to="/">Hi, <span style={{ fontWeight: "bold", textTransform: "capitalize" }}>{name.split(" ")[0]}</span></Link></li>
+							<li><Link to="/profile">Hi, <span style={{ fontWeight: "bold", textTransform: "capitalize" }}>
+									{name}
+								</span></Link></li>
 							<li>
 								<button className="btn"
 									onClick={() => {
 										setIsAuth(false);
 										setToken(null);
 										(localStorage.removeItem("token"));
+										(localStorage.removeItem("name"));
 										setTimeout(() => {
 											return navigate("/account");
 										}, 2000)
@@ -42,7 +45,7 @@ const UserSection = () => {
 				<Link to="/"><IoCloseSharp /></Link>
 			</div>
 			<ul className="user-dropdown-list">
-				<li><Link to={token && isAuth ? "/" : "/account"}><FaRegUser />My Profile</Link></li>
+				<li><Link to={token && isAuth ? "/profile" : "/account"}><FaRegUser />My Profile</Link></li>
 				<li><Link to="/"><FiShoppingBag />My Orders</Link></li>
 				<li><Link to="/"><IoIosHelpCircleOutline />Return Information</Link></li>
 				<li><Link to="/"><IoChatboxEllipsesOutline />Contact Preferences</Link></li>

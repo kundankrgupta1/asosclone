@@ -6,7 +6,7 @@ const Login = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [message, setMessage] = useState("");
-	const { token, setIsAuth, setToken, setName } = useContext(AuthContext)
+	const { token, setIsAuth, setToken } = useContext(AuthContext)
 	const [error, setError] = useState(false)
 	const [isLoading, setIsLoading] = useState(false)
 	const navigate = useNavigate()
@@ -27,8 +27,8 @@ const Login = () => {
 			const data = await res.json()
 			setMessage(data.message)
 			setToken(data.token)
-			setName(data.name)
 			localStorage.setItem("token", data.token)
+			localStorage.setItem("name", data.name)
 			setIsAuth(true)
 			setIsLoading(false)
 			setTimeout(() => {

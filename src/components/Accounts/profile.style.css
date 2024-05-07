@@ -1,0 +1,166 @@
+.profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--1wwppwc);
+}
+
+.profile-container {
+  width: 1000px;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-header {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.profile-header > p {
+  font-size: 25px;
+  font-family: var(--bold-font);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.profile-header > img {
+  width: 100px;
+}
+
+.profile-body {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  gap: 5%;
+}
+
+.profile-content {
+  background: url(https://raw.githubusercontent.com/kundankrgupta1/media/0620f3517285933695b8f2481036ecc4fd1a0dd2/assets/account_qr.svg);
+  background-size: cover;
+  flex-basis: 65%;
+}
+
+.profile-sidebar {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-sidebar-header {
+  padding: 10px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-sidebar > ul {
+  padding: 10px;
+  background-color: #ffffff;
+  list-style: none;
+}
+
+.profile-sidebar > ul > li {
+  padding: 10px;
+  margin: 20px;
+  border-bottom: 1px solid rgb(206, 206, 206);
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.profile-sidebar > ul > li:hover {
+  text-decoration: underline;
+}
+
+.profile-sidebar > ul > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.profile-sidebar-header-img {
+  width: 100px;
+  height: 100px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-family: var(--bold-font);
+  font-size: 35px;
+}
+
+.profile-sidebar-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.profile-sidebar-header-text > p:last-child {
+	font-family: var(--bold-font);
+}
+
+.profile-sidebar-icon {
+  font-size: 22px;
+}
+
+.profile-content {
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.profile-content > p {
+	background-color: #2D2D2D;
+	padding: 10px;
+	color: #ffffff;
+	font-size: 28px;
+	font-family: var(--bold-font);
+	text-transform: uppercase;
+	margin: 5px;
+}
+
+.profile-footer {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.profile-footer > ul:first-child {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 50%;
+  list-style: none;
+}
+
+.profile-footer > ul:last-child {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 50%;
+}

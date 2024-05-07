@@ -178,9 +178,14 @@
 	color: rgb(255, 0, 0);
 	border: none;
 	outline: none;
-	font-family: var(--bold-font);
+	font-family: var(--regular-font);
 	font-size: 16px;
 	cursor: pointer;
 	transition: 0.5s;
 	
+}
+
+.btn:hover {
+	text-decoration: underline;
+	transition: 0.2s;
 }

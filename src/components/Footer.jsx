@@ -8,8 +8,8 @@ const Footer = () => {
 				<div className="footer-social-payment">
 					<ul>
 						<li><Link><img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/icons8-facebook-96.png" alt="facebook" /></Link></li>
-						<li><Link><img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/icons8-instagram-96.png" alt="facebook" /></Link></li>
-						<li><Link><img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/icons8-snapchat-96.png" alt="facebook" /></Link></li>
+						<li><Link><img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/icons8-instagram-96.png" alt="instagram" /></Link></li>
+						<li><Link><img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/icons8-snapchat-96.png" alt="snapchat" /></Link></li>
 					</ul>
 					<ul>
 						<li><Link><img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/american-express-png.webp" alt="american-express" /></Link></li>
