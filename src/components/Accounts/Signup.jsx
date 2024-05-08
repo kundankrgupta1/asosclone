@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import "./accountLoginSignup.style.css"
 import { useState } from "react";
+import Loading from "../Indicator/Loading";
 const Signup = () => {
 
 	const [name, setName] = useState("");
@@ -50,7 +51,7 @@ const Signup = () => {
 					<input type="password" placeholder="********" required value={password} onChange={(e) => setPassword(e.target.value)} />
 				</div>
 				<p>{message}</p>
-				<button type="submit">{isLoading ? "please wait..." : "join asos"}</button>
+				<button type="submit">{isLoading ? <Loading /> : "join asos"}</button>
 			</form>
 			<Link to="/">go back to home</Link>
 		</div>

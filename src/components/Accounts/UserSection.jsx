@@ -19,9 +19,7 @@ const UserSection = () => {
 				{
 					token && isAuth ?
 						<ul>
-							<li><Link to="/profile">Hi, <span style={{ fontWeight: "bold", textTransform: "capitalize" }}>
-									{name}
-								</span></Link></li>
+							<li><Link to="/profile" style={{ fontWeight: "bold", textTransform: "capitalize" }}>Hi, {name && name.split(" ")[0]}</Link></li>
 							<li>
 								<button className="btn"
 									onClick={() => {
@@ -33,7 +31,7 @@ const UserSection = () => {
 											return navigate("/account");
 										}, 2000)
 									}
-									}>Logout</button>
+									}>Sign Out</button>
 							</li>
 						</ul>
 						:

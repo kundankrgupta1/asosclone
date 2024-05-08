@@ -12,7 +12,6 @@ import { HiOutlineUsers } from "react-icons/hi2";
 import { BiLogOut } from "react-icons/bi";
 import { useContext } from "react";
 import { AuthContext } from "../../context/ContextProviderApp";
-import { FaRegUserCircle } from "react-icons/fa";
 const Profile = () => {
 
 	const { setIsAuth, setToken, name } = useContext(AuthContext)
@@ -33,7 +32,7 @@ const Profile = () => {
 						<div className="profile-sidebar">
 							<div className="profile-sidebar-header">
 								<div className="profile-sidebar-header-img">
-									<p><FaRegUserCircle /></p>
+									<p>{name && name.split(' ').map(e => e[0]).join('').toUpperCase()}</p>
 								</div>
 								<div className="profile-sidebar-header-text">
 									<p>Hi,</p>

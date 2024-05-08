@@ -6,7 +6,7 @@ const ContextProviderApp = ({ children }) => {
 
 	const [isAuth, setIsAuth] = useState(!localStorage.getItem("token") ? false : true);
 	const [token, setToken] = useState(localStorage.getItem("token"));
-	const [name, setName] = useState(localStorage.getItem("name"));
+	const [name, setName] = useState(localStorage.getItem("token") ? localStorage.getItem("name") : "");
 
 	return (
 		<AuthContext.Provider value={{ name, setName, isAuth, setIsAuth, token, setToken }}>

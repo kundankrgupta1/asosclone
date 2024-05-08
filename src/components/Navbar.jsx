@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom"
 import { FiSearch } from "react-icons/fi";
 import "./navbar.style.css"
-import { useState } from "react";
 import { FaRegHeart, FaRegUser } from "react-icons/fa";
 import { PiHandbagSimpleBold } from "react-icons/pi";
 import UserSection from "./Accounts/UserSection";
 const Navbar = () => {
-	const [className, setClassName] = useState("search-bar")
 
 	return (
 		<div className="main">
@@ -17,11 +15,13 @@ const Navbar = () => {
 				</Link>
 				<ul className="ul">
 					<li><Link to="/">Women</Link></li>
-					<li><Link to="/">Men</Link></li>
+					<li><Link to="/mens">Men</Link></li>
 				</ul>
-				<div className={className} onClick={() => setClassName("search-bar outline")}>
-					<input type="text" placeholder="Search for items and brands" className="search-input" />
-					<button className="search-btn"><FiSearch /></button>
+				<div className="search-bar">
+					<input type="text" className="search-input" placeholder="Search for items and brands" />
+					<button type="button" className="search-btn">
+						<FiSearch />
+					</button>
 				</div>
 				<ul className="user-section">
 					<li className="user-hover"><Link to="/"><FaRegUser /></Link>

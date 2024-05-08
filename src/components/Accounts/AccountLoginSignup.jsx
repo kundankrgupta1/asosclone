@@ -8,7 +8,9 @@ const AccountLoginSignup = () => {
 	return (
 		<div className="account">
 			<div className="account-header">
-				<img src="https://raw.githubusercontent.com/kundankrgupta1/media/15f517bb6c49649330c29f07d9691cdd1fc9c849/assets/asos.svg" alt="asos-logo" />
+				<Link to="/">
+					<img src="https://raw.githubusercontent.com/kundankrgupta1/media/15f517bb6c49649330c29f07d9691cdd1fc9c849/assets/asos.svg" alt="asos-logo" />
+				</Link>
 			</div>
 			<div className="account-container">
 				<div className="account-links">

@@ -2,11 +2,12 @@ import { Link, useNavigate } from "react-router-dom"
 import "./accountLoginSignup.style.css"
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/ContextProviderApp";
+import Loading from "../Indicator/Loading";
 const Login = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [message, setMessage] = useState("");
-	const { token, setIsAuth, setToken } = useContext(AuthContext)
+	const { token, setIsAuth, setToken, setName } = useContext(AuthContext)
 	const [error, setError] = useState(false)
 	const [isLoading, setIsLoading] = useState(false)
 	const navigate = useNavigate()
@@ -27,6 +28,7 @@ const Login = () => {
 			const data = await res.json()
 			setMessage(data.message)
 			setToken(data.token)
+			setName(data.name)
 			localStorage.setItem("token", data.token)
 			localStorage.setItem("name", data.name)
 			setIsAuth(true)
@@ -57,7 +59,7 @@ const Login = () => {
 					<input type="password" placeholder="********" required value={password} onChange={(e) => setPassword(e.target.value)} />
 				</div>
 				{token === undefined ? <p style={{ color: "red" }}>{message}</p> : <p style={{ color: "green" }}>{message}</p>}
-				<button type="submit">{!error && isLoading ? "please wait..." : "sign in"}</button>
+				<button type="submit">{!error && isLoading ? <Loading /> : "sign in"}</button>
 			</form>
 			<Link to="/">go back to home</Link>
 		</div>
