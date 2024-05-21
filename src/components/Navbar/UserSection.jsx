@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom"
 import style from "./navbar.module.css"
 import { FaRegUser } from "react-icons/fa"
+import { MdOutlineAdminPanelSettings } from "react-icons/md";
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { FiShoppingBag } from "react-icons/fi";
@@ -11,7 +12,7 @@ const UserSection = () => {
 
 	const { isAuth, setIsAuth, token, setToken, name } = useContext(AuthContext)
 	const navigate = useNavigate();
-	
+
 	return (
 		<div className={style.userDropdown}>
 			<div className={style.blank}>&nbsp;</div>
@@ -47,6 +48,9 @@ const UserSection = () => {
 				<li><Link to="/"><FiShoppingBag />My Orders</Link></li>
 				<li><Link to="/"><IoIosHelpCircleOutline />Return Information</Link></li>
 				<li><Link to="/"><IoChatboxEllipsesOutline />Contact Preferences</Link></li>
+				{
+					token && isAuth ? <li><Link to="/admin"><MdOutlineAdminPanelSettings />Admin Dashboard</Link></li> : <></>
+				}
 			</ul>
 		</div>
 	)
