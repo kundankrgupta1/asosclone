@@ -1,4 +1,4 @@
-import "./profile.style.css"
+import style from "./profile.module.css"
 import { Link, useNavigate } from "react-router-dom"
 import { TbPackages } from "react-icons/tb";
 import { MdOutlineHelpOutline } from "react-icons/md";
@@ -19,36 +19,36 @@ const Profile = () => {
 
 	return (
 		<>
-			<div className="profile">
-				<div className="profile-container">
-					<div className="profile-header">
+			<div className={style.profile}>
+				<div className={style.profileContainer}>
+					<div className={style.profileHeader}>
 						<Link to="/">
 							<img src="https://raw.githubusercontent.com/kundankrgupta1/media/15f517bb6c49649330c29f07d9691cdd1fc9c849/assets/asos.svg" alt="asos-logo" />
 						</Link>
 						<p>my account</p>
 						<img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/digicert.png" alt="seal.digicert.com" />
 					</div>
-					<div className="profile-body">
-						<div className="profile-sidebar">
-							<div className="profile-sidebar-header">
-								<div className="profile-sidebar-header-img">
+					<div className={style.profileBody}>
+						<div className={style.profileSidebar}>
+							<div className={style.profileSidebarHeader}>
+								<div className={style.profileSidebarHeaderImg}>
 									<p>{name && name.split(' ').map(e => e[0]).join('').toUpperCase()}</p>
 								</div>
-								<div className="profile-sidebar-header-text">
+								<div className={style.profileSidebarHeaderText}>
 									<p>Hi,</p>
 									<p>{name}</p>
 								</div>
 							</div>
 							<ul>
-								<li><Link><TbPackages className="profile-sidebar-icon" />Orders</Link></li>
-								<li><Link><MdOutlineHelpOutline className="profile-sidebar-icon" />need help?</Link></li>
-								<li><Link><HiMiniGiftTop className="profile-sidebar-icon" />gift cards and vouchers</Link></li>
-								<li><Link><FaRegAddressCard className="profile-sidebar-icon" />my details</Link></li>
-								<li><Link><CiLock className="profile-sidebar-icon" />chnage password</Link></li>
-								<li><Link><FaRegAddressBook className="profile-sidebar-icon" />address book</Link></li>
-								<li><Link><IoCardOutline className="profile-sidebar-icon" />payment methods</Link></li>
-								<li><Link><IoChatboxEllipsesOutline className="profile-sidebar-icon" />contact preferences</Link></li>
-								<li><Link><HiOutlineUsers className="profile-sidebar-icon" />social accounts</Link></li>
+								<li><Link><TbPackages className={style.profileSidebarIcon} />Orders</Link></li>
+								<li><Link><MdOutlineHelpOutline className={style.profileSidebarIcon} />need help?</Link></li>
+								<li><Link><HiMiniGiftTop className={style.profileSidebarIcon} />gift cards and vouchers</Link></li>
+								<li><Link><FaRegAddressCard className={style.profileSidebarIcon} />my details</Link></li>
+								<li><Link><CiLock className={style.profileSidebarIcon} />chnage password</Link></li>
+								<li><Link><FaRegAddressBook className={style.profileSidebarIcon} />address book</Link></li>
+								<li><Link><IoCardOutline className={style.profileSidebarIcon} />payment methods</Link></li>
+								<li><Link><IoChatboxEllipsesOutline className={style.profileSidebarIcon} />contact preferences</Link></li>
+								<li><Link><HiOutlineUsers className={style.profileSidebarIcon} />social accounts</Link></li>
 								<li onClick={() => {
 									setIsAuth(false);
 									setToken(null);
@@ -57,17 +57,17 @@ const Profile = () => {
 									setTimeout(() => {
 										return navigate("/account");
 									}, 2000)
-								}}><Link><BiLogOut className="profile-sidebar-icon" />sign out</Link></li>
+								}}><Link><BiLogOut className={style.profileSidebarIcon} />sign out</Link></li>
 							</ul>
 						</div>
-						<div className="profile-content">
+						<div className={style.profileContent}>
 							<p>welcome to</p>
 							<p>your account</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="profile-footer">
+			<div className={style.profileFooter}>
 				<ul>
 					<li>ASOS Homepage</li>
 					<li>Terms & Conditions</li>

@@ -1,0 +1,103 @@
+.dashboard {
+	width: 1300px;
+	height: 100vh;
+	margin: auto;
+	padding: 20px;
+}
+
+.dashboard > a {
+	width: 100%;
+	display: flex;
+	justify-content: center;	
+	margin-bottom: 20px;
+} 
+
+.dashboard > h1 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-color: #000000;
+	color: aliceblue;
+	border-radius: 10px;
+}
+
+.dashboardContainer {
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.dashboardLinks {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/* border: 1px solid red; */
+}
+
+.dashboardLinks > p {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-color: #000000;
+	color: aliceblue;
+	border-radius: 10px;
+	text-transform: capitalize;
+}
+.addProduct {
+	width: 100%;
+	margin: auto;
+	padding: 20px 0;
+}
+
+.addProduct > form {
+	width: 100%
+}
+
+.addProduct > form > label {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	/* padding: 0 10px; */
+	font-size: 18px;
+}
+
+.addProduct > form > input {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid black;
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+.addProduct > form > input[type="submit"] {
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 25px;
+	border-radius: 5px;
+	background-color: #000000;
+	border: 2px solid black;
+	color: aliceblue;
+	cursor: pointer;
+	box-shadow: 0 9px #999;
+}
+
+.addProduct > form > input[type="submit"]:active {
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}

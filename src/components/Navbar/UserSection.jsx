@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom"
-import "../navbar.style.css"
+import style from "./navbar.module.css"
 import { FaRegUser } from "react-icons/fa"
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import { IoIosHelpCircleOutline } from "react-icons/io";
@@ -11,17 +11,17 @@ const UserSection = () => {
 
 	const { isAuth, setIsAuth, token, setToken, name } = useContext(AuthContext)
 	const navigate = useNavigate();
-
+	
 	return (
-		<div className="user-dropdown">
-			<div className="blank">&nbsp;</div>
-			<div className="user-dropdown-header">
+		<div className={style.userDropdown}>
+			<div className={style.blank}>&nbsp;</div>
+			<div className={style.userDropdownHeader}>
 				{
 					token && isAuth ?
 						<ul>
 							<li><Link to="/profile" style={{ fontWeight: "bold", textTransform: "capitalize" }}>Hi, {name && name.split(" ")[0]}</Link></li>
 							<li>
-								<button className="btn"
+								<button className={style.btn}
 									onClick={() => {
 										setIsAuth(false);
 										setToken(null);
@@ -42,7 +42,7 @@ const UserSection = () => {
 				}
 				<Link to="/"><IoCloseSharp /></Link>
 			</div>
-			<ul className="user-dropdown-list">
+			<ul className={style.userDropdownList}>
 				<li><Link to={token && isAuth ? "/profile" : "/account"}><FaRegUser />My Profile</Link></li>
 				<li><Link to="/"><FiShoppingBag />My Orders</Link></li>
 				<li><Link to="/"><IoIosHelpCircleOutline />Return Information</Link></li>

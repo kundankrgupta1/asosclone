@@ -1,10 +1,9 @@
-import "./topheader.style.css"
-import "../index.css"
+import style from "./navbar.module.css"
 import { Link } from "react-router-dom"
 const TopHeader = () => {
 	
 	return (
-		<div className="top-header">
+		<div className={style.topHeader}>
 			<ul>
 				<li><Link>marketplace</Link></li>
 				<li><Link>help & faqs</Link></li>

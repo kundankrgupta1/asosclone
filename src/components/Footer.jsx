@@ -1,11 +1,11 @@
-import "./footer.style.css"
+import style from "./footer.module.css"
 import { Link } from "react-router-dom"
 
 const Footer = () => {
 	return (
-		<div className="main-footer">
-			<div className="footer-social-payment-main">
-				<div className="footer-social-payment">
+		<div className={style.mainFooter}>
+			<div className={style.footerSocialPaymentMain}>
+				<div className={style.footerSocialPayment}>
 					<ul>
 						<li><Link><img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/icons8-facebook-96.png" alt="facebook" /></Link></li>
 						<li><Link><img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/icons8-instagram-96.png" alt="instagram" /></Link></li>
@@ -20,8 +20,8 @@ const Footer = () => {
 					</ul>
 				</div>
 			</div>
-			<div className="footer">
-				<div className="footer-links">
+			<div className={style.footer}>
+				<div className={style.footerLinks}>
 					<p>help & Information</p>
 					<ul>
 						<li><Link>Help</Link></li>
@@ -30,7 +30,7 @@ const Footer = () => {
 						<li><Link>Sitemap</Link></li>
 					</ul>
 				</div>
-				<div className="footer-links">
+				<div className={style.footerLinks}>
 					<p>about asos</p>
 					<ul>
 						<li><Link>About us</Link></li>
@@ -40,7 +40,7 @@ const Footer = () => {
 						<li><Link>Store Locator</Link></li>
 					</ul>
 				</div>
-				<div className="footer-links">
+				<div className={style.footerLinks}>
 					<p>more from asos</p>
 					<ul>
 						<li><Link>Mobile and ASOS apps</Link></li>
@@ -52,11 +52,11 @@ const Footer = () => {
 						<li><Link>Help Improves the ASOS Website</Link></li>
 					</ul>
 				</div>
-				<div className="footer-links">
+				<div className={style.footerLinks}>
 					<p>shopping from:</p>
 					<p>You&#39;re in <img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/india-circle.png" height={"15px"} alt="india" /> | <Link>CHANGE</Link></p>
 					<p>Some of our international sites:</p>
-					<div className="footer-sites">
+					<div className={style.footerSites}>
 						<img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/india-circle.png" alt="india" height={"18px"} />
 						<img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/brazil.png" alt="brazil" height={"18px"} />
 						<img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/finland.png" alt="finland" height={"18px"} />
@@ -67,12 +67,12 @@ const Footer = () => {
 						<img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/italy.png" alt="italy" height={"18px"} />
 						<img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/switzerland.png" alt="switzerland" height={"18px"} />
 						<img src="https://raw.githubusercontent.com/kundankrgupta1/media/main/assets/singapore.png" alt="singapore" height={"18px"} />
-						
+
 					</div>
 				</div>
 			</div>
-			<div className="sub-footer">
-				<div className="sub-footer-text">
+			<div className={style.subFooter}>
+				<div className={style.subFooterText}>
 					<p>© 2024 ASOS</p>
 					<p>Privacy & Cookies | Ts&Cs | Accessibility</p>
 				</div>

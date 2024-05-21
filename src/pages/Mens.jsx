@@ -1,9 +1,8 @@
-import CatNavbar from "../components/CategoryNavbar/CatNavbar"
+import style from "./mens.module.css"
 
 const Mens = () => {
 	return (
-		<div className="mens-main">
-			<CatNavbar />
+		<div className={style.mensMain}>
 		</div>
 	)
 }

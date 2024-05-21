@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "./accountLoginSignup.style.css"
+import style from "./account.module.css"
 import { useState } from "react";
 import Loading from "../Indicator/Loading";
 const Signup = () => {
@@ -35,7 +35,7 @@ const Signup = () => {
 	}
 
 	return (
-		<div className="account-singup-form">
+		<div className={style.accountSingupForm}>
 			<p>sign up here...</p>
 			<form onSubmit={handleSubmit}>
 				<div>

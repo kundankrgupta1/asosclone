@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom"
-import "./accountLoginSignup.style.css"
+import style from "./account.module.css"
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/ContextProviderApp";
 import Loading from "../Indicator/Loading";
@@ -47,7 +47,7 @@ const Login = () => {
 	}
 
 	return (
-		<div className="account-singup-form">
+		<div className={style.accountSingupForm}>
 			<p>sign in here...</p>
 			<form onSubmit={handleSubmit}>
 				<div>

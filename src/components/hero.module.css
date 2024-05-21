@@ -12,7 +12,7 @@
 	position: relative;
 }
 
-.hero-text {
+.heroText {
 	color: white;
 	letter-spacing: 1px;
 	display: flex;
@@ -21,7 +21,7 @@
 	align-items: center;
 }
 
-.hero-text > h1 {
+.heroText > h1 {
 	font-family: var(--bold-font);
 	padding: 0 15px;
 	font-size: 60px;
@@ -29,7 +29,7 @@
 	width: fit-content;
 }
 
-.hero-text > p  {
+.heroText > p  {
 	font-family: var(--regular-font);
 	font-size: 20px;
 	letter-spacing: 1px;
@@ -38,11 +38,11 @@
 	width: fit-content;
 }
 
-.hero-btn {
+.heroBtn {
 	margin-top: 20px;
 }
 
-.hero-btn > button {
+.heroBtn > a > button {
 	margin: 0 10px;
 	font-family: var(--bold-font);
 	padding: 12px 25px;
@@ -56,7 +56,7 @@
 	letter-spacing: 1px;
 }
 
-.hero-text-2 {
+.heroText2 {
 	background-color: var(--11lcxa5);
 	padding: 5px 0;
 	width: 1360px;
@@ -71,6 +71,6 @@
 	bottom: 0;
 }
 
-.hero-text-2 > p span {
+.heroText2 > p span {
 	font-family: var(--regular-font);
 }

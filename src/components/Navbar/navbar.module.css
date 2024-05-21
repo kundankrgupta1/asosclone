@@ -1,0 +1,374 @@
+/* TopHeader.jsx */
+.topHeader {
+	width: 100%;
+}
+
+.topHeader > ul {
+	height: 30px;
+	border-right: 1px solid rgb(222, 221, 221);
+	max-width: 1300px;
+	list-style: none;
+	margin: auto;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.topHeader > ul > li {
+	height: 100%;
+	list-style: none;
+	padding: 0 25px;
+	text-transform: capitalize;
+	font-size: 14px;
+	letter-spacing: 1px;
+	border-left: 1px solid rgb(222, 221, 221);
+}
+
+.topHeader > ul > li > a {
+	text-decoration: none;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.topHeader > ul > li:hover {
+	cursor: pointer;
+	color: rgb(35, 35, 249);
+}
+
+
+.topHeader > ul > li > a > img:hover{
+	cursor: pointer;
+	border: 1px solid blue;
+	border-radius: 50%;
+}
+/* end of TopHeader.jsx */
+
+/* ====================================== */
+
+/* start of Navbar.jsx */
+.main {
+	width: 100%;
+	background-color: var(--11lcxa5);
+}
+
+.main > ul {
+	height: 60px;
+	max-width: 1300px;
+	list-style: none;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main > ul > li {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	color: var(--3pchel);
+	font-size: 14px;
+	font-family: var(--bold-font);
+	letter-spacing: 2px;
+}
+
+.main > ul > li:nth-child(5),
+.main > ul > li:nth-child(6),
+.main > ul > li:nth-child(7) {
+	font-size: 24px;
+	border: 1px solid var(--11lcxa5);
+}
+
+.main > ul > li:nth-child(5):hover {
+	border: 1px solid white;
+	border-radius: 5px;
+	position: relative;
+}
+
+.main > ul > li:nth-child(4){
+	width: 70%;
+	position: relative;
+	margin: 0 20px;
+}
+
+.main > ul > li:nth-child(4) > input {
+	width: 100%;
+	height: 38px;
+	border: none;
+	padding: 0 10px;
+	border-radius: 50px;
+	font-family: var(--regular-font);
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.main > ul > li:nth-child(4) > button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+	height: 100%;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	font-size: 24px;
+}
+
+.main > ul > li:nth-child(1) > a,
+.main > ul > li:nth-child(2) > a,
+.main > ul > li:nth-child(3) > a {
+	padding: 0 30px;
+	border-right: 1px solid var(--4439lq);
+}
+
+.main > ul > li > a {
+	text-decoration: none;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.main > ul > li:nth-child(2):hover,
+.main > ul > li:nth-child(3):hover {
+	cursor: pointer;
+	background-color: var(--4439lq);
+}
+/* end of Navbar.jsx */
+
+/* ====================================== */
+
+/* start for userSection.jsx */
+.userDropdown {
+	display: none;
+	width: 325px;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+	position: absolute;
+	top: 100%;
+	left: -170px;
+	right: 0;
+	background-color: white;
+	border-radius: 5px;
+	transition: 0.5s;
+	color: black;
+	font-size: 16px;
+	z-index: 1;
+}
+
+.main > ul > li:nth-child(5):hover .userDropdown {
+	display: block;
+	z-index: 1;
+}
+
+.userDropdownHeader {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--na3s62);
+	padding: 10px;
+}
+
+.userDropdownHeader > ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.userDropdownList {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	list-style: none;
+	font-family: var(--regular-font);
+	text-transform: capitalize;
+	font-size: 18px;
+}
+.userDropdownList > li > a {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+
+.userDropdownHeader > ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.userDropdownHeader > a:hover {
+	color: rgb(62, 29, 227);
+}
+
+.blank {
+	background-color: var(--na3s62);
+	width: 15px;
+	height: 15px;
+	rotate: 45deg;
+	position: absolute;
+	top: -7px;
+	left: 187px;
+}
+
+.btn {
+	background-color: var(--na3s62);
+	color: rgb(255, 0, 0);
+	border: none;
+	outline: none;
+	font-family: var(--regular-font);
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.btn:hover {
+	text-decoration: underline;
+	transition: 0.2s;
+}
+/* end of userSection.jsx */
+
+/* ====================================== */
+
+/* start CatNavbar.jsx */
+.catNavbarMain {
+	width: 100%;
+	background-color: var(--4439lq)
+}
+
+.catNavbarMain > ul {
+	height: 50px;
+	max-width: 1270px;
+	list-style: none;
+	margin: auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: aliceblue;
+	text-transform: capitalize;
+}
+
+.catNavbarMain > ul > li {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.catNavbarMain > ul > li > a {
+	padding: 0 20px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.catNavbarMain > ul > li > a:hover {
+	background-color: var(--4439lq);
+}
+/* end CatNavbar.jsx */
+
+
+/* MegaMenu.jsx */
+.megaMenu {
+	background-color: #EEEEEE;
+	width: 1270px;
+	margin: auto;
+	padding: 5px 20px;
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	border-radius: 5px;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+.megaMenu > .megaMenuContainer {
+	color: var(--11lcxa5);
+	display: flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.catNavbarMain > ul > li:hover .megaMenu {
+	display: block;
+}
+
+
+.megaMenuContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 2px;
+	flex-basis: 25%;
+	border-right: 1px solid rgb(222, 221, 221);
+}
+
+.megaMenuContent > h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.megaMenuContent > ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width: 100%;
+}
+
+.megaMenuContent > ul > li > a {
+	text-decoration: none;
+	color: var(--11lcxa5);
+	text-transform: capitalize;
+	display: flex;
+	align-items: center;
+	padding: 2px 0;
+}
+
+.megaMenuContent > ul > li > a:hover {
+	color: rgb(49, 49, 255);
+}
+
+.megaMenuContent:nth-child(2) > ul > li > a,
+.megaMenuContent:nth-child(3) > ul > li > a {
+	border-bottom: 1px solid rgb(222, 221, 221);
+}
+
+.megaMenuContent:nth-child(2) > ul > li > a > img,
+.megaMenuContent:nth-child(3) > ul > li > a > img {
+	height: 40px;
+	margin-right: 10px;
+	border-radius: 50px;
+}
+
+.megaMenuContent:nth-child(2) > ul > li > a > img:hover,
+.megaMenuContent:nth-child(3) > ul > li > a > img:hover {
+	border: 1px solid rgb(49, 49, 255);
+	margin-right: 10px;
+	border-radius: 50px;
+}
+
+.megaMenuContent:nth-child(4) > ul > li > a > img {
+	position: relative;
+}
+
+.megaMenuContent:nth-child(4) > ul > li > a > p {
+	position: absolute;
+	right: 120px;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 2px 5px;
+	border-radius: 5px;
+	background: transparent linear-gradient(90deg, rgb(194, 194, 194) 0%, rgb(255, 255, 255) 100%) 0% 0% no-repeat padding-box;
+	
+}
+/* end-MegaMenu.jsx */

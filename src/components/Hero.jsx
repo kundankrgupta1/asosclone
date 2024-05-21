@@ -1,17 +1,20 @@
-import "./hero.style.css"
+import { Link } from "react-router-dom"
+import style from "./hero.module.css"
 const Hero = () => {
 	return (
 		<>
-			<div className="hero">
-				<div className="hero-text">
+			<div className={style.hero}>
+				<div className={style.heroText}>
 					<h1>ASOS</h1>
 					<p>ASOS DESIGN and 850+ brands</p>
 				</div>
-				<div className="hero-btn">
+				<div className={style.heroBtn}>
+					<Link to="/womens">
 					<button>shop womens</button>
-					<button>shop mens</button>
+					</Link>
+					<Link to="/mens"><button>shop mens</button></Link>
 				</div>
-				<div className="hero-text-2">
+				<div className={style.heroText2}>
 					<p>EASY WORLDWIDE DELIVERY <br /> <span>*minimum spends apply</span></p>
 					<p>ASOS DESIGN and 850+ brands</p>
 				</div>

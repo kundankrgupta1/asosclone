@@ -1,8 +1,8 @@
-import "./loading.style.css"
+import style from "./loading.module.css"
 const Loading = () => {
 	return (
-		<div className="main-loading">
-			<div className="loader"></div>
+		<div className={style.mainLoading}>
+			<div className={style.loader}></div>
 			<p>please wait...</p>
 		</div>
 	)
